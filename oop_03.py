@@ -33,8 +33,14 @@ class Dog(Pet):
 
 
 
-cat = Cat('Tom', 4, 'Blue-White')
-dog = Dog('Goofy', 4, 'Browne', False)
+pets = [
+    Cat('Tom', 4, 'Blue-White'),
+    Dog('Goofy', 4, 'Browne', False),
+    Cat('Tom', 4, 'Blue-White'),
+    Dog('Goofy', 4, 'Browne', False),
+    Cat('Tom', 4, 'Blue-White'),
+    Pet('Goofy', 4, 'Browne')
+]
 
-print(cat.make_sound())
-print(dog.make_sound())
+for pet in pets:
+    print(pet.make_sound())
